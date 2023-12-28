@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArithmoRush</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="hero">
+
+        <div class="cong">
+            <h1 id="congg">Congratulations on leveling up! 🎮🌟 Next level, here you come! 🚀👾</h1>
+        </div>
+
+        <div class="main">
+            <h1>ArithmoRush: Math Challenge for Bright Minds</h1>
+            <div class="top">
+                <div class="nums" title="Numbers">
+                    <ul>
+                        <li class="num">x</li>
+                        <li class="num">y</li>
+                        <li class="num">z</li>
+                        <li class="num">m</li>
+                    </ul>
+                </div>
+                <div class="target" title="Target Number">
+                    <h1 id="target-num">XY</h1>
+                </div>
+                <div class="ops" title="Operators">
+                    <ul>
+                        <li class="opers">+</li>
+                        <li class="opers">-</li>
+                        <li class="opers">*</li>
+                        <li class="opers">/</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work">
+                <ul class="work-elm-ul">
+
+                </ul>
+            </div>
+
+            <div class="bottom">
+                <h1 id="answer-main">= </h1>
+                <div class="btns">
+                    <button type="button" id="clear">Clear</button>
+                    <button type="button" id="next">Next Level</button>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 id="level">LEVEL: <span id="lvl">1</span></h2>
+        <h2 id="score">SCORE: <span id="scr">0</span></h2>
+
+        <h3 id="warning">** This game doesn't obey the BODMAS/ BIDMAS rule.</h3>
+
+        <div class="how-to" title="How to Play?">
+            <img src="question-mark.svg" alt="How to Play" id="how"><span>How to Play</span>
+            <div class="how-play">
+                <p>Objective:</p>
+                The goal of the game is to match the target number by using the provided numbers and basic arithmetic operators.<br><br>
+
+                <p>Instructions:</p><br><br>
+                <p>Target Number: </p>Each level begins with a randomly generated target number.<br><br>
+                <p>Number Buttons:</p> Click on the number buttons to build an expression.<br><br>
+                The expression is formed by combining numbers and operators.<br><br>
+                <p>Operator Buttons: </p>Click on the operator buttons to perform operations in your expression.<br><br>
+                <p>Clear Button:</p> Click the "Clear" button to reset the work area and start a new expression.<br><br>
+                <p>Next Level: </p>Click "Next Level" to advance to the next level with an increased difficulty.<br><br>
+                <p>Scoring:</p>Each level successfully completed adds points to your score.<br><br>
+                Good luck and have fun playing the game!
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js" type="module"></script>
+    <script src="confetti.js"></script>
+</body>
+</html>

@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Glass+Antiqua&family=Josefin+Slab&family=Luckiest+Guy&family=Poppins:wght@300&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Saira:wght@300&family=Single+Day&family=Titillium+Web:wght@300&family=Wellfleet&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: linear-gradient(45deg, #456FE8, #19B0EC);
+}
+
+.main{
+    width: 60vw;
+    height: 65vh;
+    -webkit-backdrop-filter: blur(11px) saturate(180%);
+    backdrop-filter: blur(11px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    -webkit-user-select: none;
+    user-select: none;
+    transition: .7s all ease;
+}
+
+.play-active{
+    transform: translateX(10vw);
+}
+
+.main h1{
+    font-family: 'Wellfleet';
+    font-size: 2.4rem;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.top{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    width: 100%;
+    height: 20vh;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+.nums ul, .ops ul, .work ul{
+    list-style: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.nums ul{
+    margin-left: -30px;
+}
+
+.nums ul li, .ops ul li, .work ul li{
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    border: 2px solid #fff;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    cursor: pointer;
+    transition: .4s color ease, .4s transform ease;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.nums ul li:hover, .ops ul li:hover{
+    background-color: #fff;
+    color: #19B0EC;
+    transform: scale(1.1);
+}
+
+.target{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    user-select: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.work{
+    width: 90%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#warning{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30%;
+    padding: 8% 5% 0 5%;
+}
+
+.btns button{
+    width: 150px;
+    height: 55px;
+    border-radius: 55px;
+    outline: none;
+    border: none;
+    -webkit-backdrop-filter: blur(11px) saturate(180%);
+    backdrop-filter: blur(11px) saturate(180%);
+    background-color: #1845ca;
+    font-size: 1.3rem;
+    color: #fff;
+    margin-left: 20px;
+    box-shadow: 6px 3px 3px #000;
+    cursor: pointer;
+    font-family: 'Wellfleet';
+    transition: .4s all ease;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.btns button:hover{
+    transform: scale(1.1);
+}
+
+#next{
+    background-color: #a5a5a5;
+    opacity: .4;
+    pointer-events: none;
+}
+
+#next:hover{
+    transform: scale(1);
+}
+
+#level, #score{
+    font-size: 2.1rem;
+    font-family: 'single day';
+    font-size: 2.7rem;
+    color: #fc8682;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+#level span, #score span{
+    font-family: 'single day';
+    color: #ffffff;
+}
+
+#score{
+    top: 70px;
+}
+
+.how-to{
+    width: 20vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 30px;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: #1845ca;
+    box-shadow: 2px 2px 4px #000;
+    transform: translateX(-21vw);
+    transition: .7s all ease;
+    color: #fff;
+}
+
+.how-active{
+    transform: translateX(0);
+}
+
+.how-to img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transform: translateX(21vw);
+}
+
+.how-btn-active{
+    transform: translate(0);
+}
+
+.how-to p{
+    display: inline;
+}
+
+.how-to span{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'wellfleet';
+    position: relative;
+    top: -13px;
+    left: 5px;
+}
+
+.how-play{
+    text-align: center;
+    padding-top: 15px;
+}
+
+.how-play p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'wellfleet';
+}
+
+.cong{
+    width: 100%;
+    height: 17.5vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.cong h1{
+    font-family: 'Single Day';
+    font-size: 2.6rem;
+    transform: scale(0);
+    transition: .5s all ease;
+}
+
+@keyframes hb{
+    to{
+        transform: scale(1);
+    }
+}
+
+
